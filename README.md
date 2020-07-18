@@ -1,13 +1,13 @@
-###Demo
+### Demo
 Demo Running (here)
 
-#Changes
+# Changes
 
-##Optimizing the code
+## Optimizing the code
 I've Removed all the duplicated codes and remove the need to keep using jQuery to check for the html state.
 This would reduce the amount of times jQuery would need to search the entire site to check the board state.
 
-#Scalability
+# Scalability
 Created a base class `TTTBoard` for the main logic of the game. This allows for scalability by having the options
 to set board `size` and a `winCondition`. The board only needs a container with a unique board id to 
 tell it where to render the board.
@@ -24,19 +24,19 @@ With `size`, you can control how big the grid is. Making playing a 6x6 game of T
 With `win`, you can set the win condition.
 By just those 2 parameters, it is possible to play a 6x6 Tic Tac Toe with a win condition of 4 in a row.
 
-##Game
+## Game
 * Change first player starting as `X` instead of `O`
     * First player is usually `X`
 * Removed all Alert
     * Alerts are annoying and removed the immersion from the game
 * Added persistent info bar to status and who's turn it is 
 
-##html - index.html
+## html - index.html
 * Remove ul li to create board
     * Using bootstrap's grid system
 * Fixed html structure to make full use of bootstrap 
 
-##JavaScript - js/index.js
+## JavaScript - js/index.js
 * Updated Javascript version
 ##### Rewrite Tic Tac Toe Logic to be more dynamic
 * Each Board is its own class container
@@ -52,7 +52,7 @@ By just those 2 parameters, it is possible to play a 6x6 Tic Tac Toe with a win 
         * Example on how to use the `TTTBoard` class, 
         can be used as a parent class and expand on the functionality of the game   
 
-###CSS - css/style.css
+### CSS - css/style.css
 * Updated bootstrap version
 * Rename `disable` to `disabled`
     * Bootstrap `disabled` will actually disabled the button
